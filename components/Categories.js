@@ -25,7 +25,6 @@ function Categories() {
       <CategoryCard imgUrl="https://links.papareact.com/wru" title="Testing" />
       <CategoryCard imgUrl="https://links.papareact.com/wru" title="Testing" />
       <CategoryCard imgUrl="https://links.papareact.com/wru" title="Testing" />
-      <CategoryCard imgUrl="https://links.papareact.com/wru" title="Testing" />
     </ScrollView>
   );
 }
