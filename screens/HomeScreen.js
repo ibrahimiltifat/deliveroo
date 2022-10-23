@@ -29,6 +29,7 @@ function HomeScreen() {
 
   return (
     <SafeAreaView className="bg-white pt-5">
+      {/* Header */}
       <View className="flex-row pb-3 items-center mx-4 space-x-2">
         <Image
           source={{
@@ -45,6 +46,7 @@ function HomeScreen() {
         </View>
         <UserIcon size={35} color="#00CCBB" />
       </View>
+      {/*Search Box  */}
       <View className="flex-row items-center space-x-2 pb-2 mx-4">
         <View className="flex-row  flex-1 space-x-2 bg-gray-200 p-3">
           <MagnifyingGlassIcon color="gray" size={20} />
@@ -55,24 +57,25 @@ function HomeScreen() {
         </View>
         <AdjustmentsVerticalIcon color="#00CCBB" />
       </View>
+
       <ScrollView className="bg-gray-100">
         <Categories />
         <FeaturedRow
           id="123"
           title="Featured Row"
-          description="desc"
+          description="Paid placements from our parteners"
           featuredCategory="featured cat"
         />
         <FeaturedRow
           id="1234"
-          title="Featured Row"
-          description="desc"
+          title="Tasty Discounts"
+          description="Everyome has been enjoying these juicy discounts"
           featuredCategory="featured cat"
         />
         <FeaturedRow
           id="12345"
-          title="Featured Row"
-          description="desc"
+          title="Offers near you"
+          description="Why not support your local restaurants tonight"
           featuredCategory="featured cat"
         />
       </ScrollView>

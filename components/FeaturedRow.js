@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView, Text, View } from "react-native";
 import { ArrowRightIcon } from "react-native-heroicons/outline";
+import RestaurantCard from "./RestaurantCard";
 
 function FeaturedRow({ title, description, featuredCategory }) {
   return (
@@ -18,7 +19,44 @@ function FeaturedRow({ title, description, featuredCategory }) {
         }}
         showsHorizontalScrollIndicator={false}
         className="pt-4"
-      ></ScrollView>
+      >
+        <RestaurantCard
+          id={123}
+          imgUrl="https://links.papareact.com/gn7"
+          rating="2.0"
+          title="Yo! sushi"
+          genre="Japanese"
+          adress="123 main st"
+          short_description="This is a test desc"
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+        <RestaurantCard
+          id={123}
+          imgUrl="https://links.papareact.com/gn7"
+          rating="2.0"
+          title="Yo! sushi"
+          genre="Japanese"
+          adress="123 main st"
+          short_description="This is a test desc"
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+        <RestaurantCard
+          id={123}
+          imgUrl="https://links.papareact.com/gn7"
+          rating="2.0"
+          title="Yo! sushi"
+          genre="Japanese"
+          adress="123 main st"
+          short_description="This is a test desc"
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+      </ScrollView>
     </View>
   );
 }
