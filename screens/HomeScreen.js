@@ -82,27 +82,14 @@ function HomeScreen() {
       <ScrollView className="bg-gray-100">
         <Categories />
 
-        {/* {featuredCategories?.map((category) => (
+        {featuredCategories?.map((category) => (
           <FeaturedRow
             key={category._id}
             id={category._id}
             title={category.name}
-            description="Paid placements from our parteners"
-            featuredCategory="featured cat"
+            description={category.short_description}
           />
-        ))} */}
-        <FeaturedRow
-          id="1234"
-          title="Tasty Discounts"
-          description="Everyome has been enjoying these juicy discounts"
-          featuredCategory="featured cat"
-        />
-        <FeaturedRow
-          id="12345"
-          title="Offers near you"
-          description="Why not support your local restaurants tonight"
-          featuredCategory="featured cat"
-        />
+        ))}
       </ScrollView>
     </SafeAreaView>
   );
